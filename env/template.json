@@ -82,7 +82,7 @@
             "type": "Microsoft.Web/sites",
             "dependsOn": [
                 "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
-                "microsoft.insights/components/APP-KGSS-KCMC-finaldevops-dev"
+                "microsoft.insights/components/APP-xxxx-xxxx-xx-xxxx"
             ],
             "properties": {
                 "siteConfig": {
@@ -108,7 +108,7 @@
                         },
                         {
                             "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
-                            "value": "[reference('microsoft.insights/components/APP-KGSS-KCMC-finaldevops-dev', '2015-05-01').InstrumentationKey]"
+                            "value": "[reference('microsoft.insights/components/APP-xxxx-xxxx-xx-xxxx', '2015-05-01').InstrumentationKey]"
                         },
                         {
                             "name": "XDT_MicrosoftApplicationInsights_Mode",
